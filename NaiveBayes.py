@@ -24,8 +24,8 @@ class NB_clf:
         Then a Kernel Density Estimate (KDE) is created
         for each feature within each class.'''
         self.n_total = len(X)
-        self.n_classes = len(np.unique(X))
-        self.n_features = y.shape[1]
+        self.n_classes = len(np.unique(y))
+        self.n_features = X.shape[1]
 
         for k in range(self.n_classes):
             idx = np.where(y==k)[0]
