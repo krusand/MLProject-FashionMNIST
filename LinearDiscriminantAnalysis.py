@@ -12,7 +12,8 @@ class LDA_implemented:
     def fit(self,X,y):
         N_CLASSES = len(np.unique(y))
         
-        assert self.n_components <= N_CLASSES - 1, f"n_components can at most be k-1, the value provided was {self.n_components}"
+        assert self.n_components <= X.shape[0]
+        assert self.n_components <= N_CLASSES - 1, f"n_components can at most be min(p,k-1), the value provided was k = {self.n_components}"
         assert X.shape[0] == y.shape[0], f"Number of observations must be the same. X: {X.shape[0]}, y: {y.shape[0]}"
 
         mean_overall = np.mean(X, axis=0)
