@@ -1,7 +1,7 @@
-# Welcome to the GitHub for our Machine Learning project!
+# Welcome to our Machine Learning project!
 This repository contains the source code used for the project.
 
-The scope of the project is classification of clothing images from the FashionMNIST dataset.  
+The scope of the project is classification of clothing images from a subset of the FashionMNIST dataset.  
 
 Dimensionality reduction methods used:
 - Principal Component Analysis (PCA)
