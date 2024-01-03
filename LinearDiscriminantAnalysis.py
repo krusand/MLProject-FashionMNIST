@@ -32,7 +32,7 @@ class LDA_implemented:
         self.linear_discriminants = eigenvectors_sort[:self.n_components]
         self._isfitted = True
         print("LDA succesfully fitted. To transform, call the transform method")
-
+        
     def transform(self, X):
         assert self._isfitted, "LDA must be fitted before transforming"
         
